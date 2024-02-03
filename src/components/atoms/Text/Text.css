@@ -1,0 +1,74 @@
+/* COLOR */
+.text-danger {
+  color: #d9534f;
+}
+
+.text-primary {
+  color: #0275d8;
+}
+
+.text-warning {
+  color: #f0ad4e;
+}
+
+.text-black {
+  color: #151519;
+}
+
+.text-xxs {
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-md {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 3.75rem;
+  line-height: 3rem;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.text {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=Text.css.map */

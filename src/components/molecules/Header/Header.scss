@@ -1,0 +1,43 @@
+@use "../../../utils/variable" as *;
+
+header {
+
+  position: fixed;
+  height: 80px;
+  top: 25px;
+  left: 50%;
+  z-index: 1000;
+  transform: translateX(-50%);
+
+  background: $faded;
+  box-shadow:
+          8px 7px 21px $light-gray,
+          -6px -7px 11px $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 50px;
+  border-radius: 50px;
+  border: solid 2px $white;
+
+  div {
+    display: flex;
+  }
+  nav {
+    ul {
+     display: flex;
+     gap: $md;
+     li {
+       list-style: none;
+       padding: $xs $lg;
+       border-radius: 29px;
+
+       &.active {
+         box-shadow:
+                 inset 5px 5px 2px rgba(0, 0, 0, 12%),
+                 inset -4px -4px 4px $white;
+       }
+     }
+   }
+ }
+}

@@ -1,0 +1,43 @@
+.hero {
+  height: 100vh;
+  position: relative;
+
+
+  .puddle {
+    position: absolute;
+    left: 0;
+    bottom: 115px;
+  }
+
+  .hero__content {
+    padding-top: 50px;
+    background: red;
+
+    .name {
+      position: relative;
+      width: fit-content;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        z-index: -1;
+        height: 50%;
+        width: 100%;
+        background: lightseagreen;
+      }
+    }
+  }
+
+
+
+  .hero__quote {
+    background: blue;
+    position: absolute;
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+}

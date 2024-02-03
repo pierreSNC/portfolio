@@ -1,10 +1,22 @@
 import React from 'react';
+import './Text.css';
 
-const Text = ({content}) => {
+const Text = ({
+                  tag = 'div',
+                  className = '',
+                  content = '',
+                  href = '',
+              }) => {
+    const Tag = tag;
+    const tagProps = Tag === 'a' ? { href } : {};
+
     return (
-        <div>
+        <Tag
+            {...tagProps}
+            className={`text ${className}`}
+        >
             {content}
-        </div>
+        </Tag>
     );
 };
 

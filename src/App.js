@@ -1,11 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import Text from "./components/atoms/Text/Text";
+import Hero from "./components/organsims/Hero/Hero";
+import Image from "./components/atoms/Image/Image";
+import React from "react";
+import Header from "./components/molecules/Header/Header";
 
 function App() {
   return (
     <div className="App">
-      <Text content={'bep'} />
+
+        <Hero />
     </div>
   );
 }

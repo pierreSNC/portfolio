@@ -1,0 +1,35 @@
+/* COLOR */
+/* SIZE */
+header {
+  position: fixed;
+  height: 80px;
+  top: 25px;
+  left: 50%;
+  z-index: 1000;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, rgb(232, 234, 241) 0%, rgb(235, 236, 240) 100%);
+  box-shadow: 8px 7px 21px #898989, -6px -7px 11px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 50px;
+  border-radius: 50px;
+  border: solid 2px #ffffff;
+}
+header div {
+  display: flex;
+}
+header nav ul {
+  display: flex;
+  gap: 18px;
+}
+header nav ul li {
+  list-style: none;
+  padding: 12px 22px;
+  border-radius: 29px;
+}
+header nav ul li.active {
+  box-shadow: inset 5px 5px 2px rgba(0, 0, 0, 0.12), inset -4px -4px 4px #ffffff;
+}
+
+/*# sourceMappingURL=Header.css.map */

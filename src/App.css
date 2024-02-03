@@ -1,0 +1,19 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(232,234,241,1) 0%, rgba(235,236,240,1) 100%);
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.App {
+    margin-top: 115px;
+}
