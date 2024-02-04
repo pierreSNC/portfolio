@@ -1,0 +1,22 @@
+button {
+  height: 50px;
+  width: 200px;
+  box-shadow: 8px 7px 21px #898989, -6px -7px 11px #ffffff;
+}
+button.btn-rounded {
+  border-radius: 25px;
+}
+button.bg-primary {
+  background: linear-gradient(90deg, rgb(2, 117, 216) 0%, rgb(3, 90, 163) 100%);
+}
+button.bg-none {
+  background: linear-gradient(180deg, rgb(232, 234, 241) 0%, rgb(235, 236, 240) 100%);
+}
+button.border-none {
+  border: none;
+}
+button.border-primary {
+  border: solid 2px #ffffff;
+}
+
+/*# sourceMappingURL=Button.css.map */

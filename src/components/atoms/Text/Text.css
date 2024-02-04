@@ -1,4 +1,5 @@
 /* COLOR */
+/* SIZE */
 .text-danger {
   color: #d9534f;
 }
@@ -12,7 +13,7 @@
 }
 
 .text-black {
-  color: #151519;
+  color: #151519 !important;
 }
 
 .text-xxs {
@@ -46,8 +47,8 @@
 }
 
 .text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 3rem !important;
+  line-height: 3.75rem !important;
 }
 
 .text-3xl {

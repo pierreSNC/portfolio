@@ -1,0 +1,20 @@
+@use "../../../utils/_variable.scss" as *;
+
+button {
+  height: 50px;
+  width: 200px;
+  box-shadow:
+          8px 7px 21px $light-gray,
+          -6px -7px 11px $white;
+
+  &.btn-rounded {
+    border-radius: 25px;
+  }
+
+  &.bg-primary { background: $primary-gradient; }
+  &.bg-none { background: $faded; }
+
+  &.border-none { border: none; }
+  &.border-primary { border: solid 2px $white; }
+}
+

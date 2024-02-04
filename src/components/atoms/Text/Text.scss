@@ -1,9 +1,9 @@
-@use "../../../utils/_variable.scss";
+@use "../../../utils/_variable.scss" as *;
 
-.text-danger { color: variable.$danger; }
-.text-primary { color: variable.$primary; }
-.text-warning { color: variable.$warning; }
-.text-black { color: variable.$black; }
+.text-danger { color: $danger; }
+.text-primary { color: $primary; }
+.text-warning { color: $warning; }
+.text-black { color: $black !important; }
 
 .text-xxs { font-size: 0.5rem; line-height: 1rem; }
 .text-xs { font-size: 0.75rem; line-height: 1rem; }
@@ -11,7 +11,7 @@
 .text-md { font-size: 1rem; line-height: 1.5rem; }
 .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
 .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
-.text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.text-2xl { font-size: 3rem !important; line-height: 3.75rem !important;; }
 .text-3xl { font-size: 3.75rem; line-height: 3rem; }
 
 .normal { font-weight: 400; }
