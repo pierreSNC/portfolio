@@ -2,6 +2,13 @@ button {
   height: 50px;
   width: 200px;
   box-shadow: 8px 7px 21px #898989, -6px -7px 11px #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 button.btn-rounded {
   border-radius: 25px;

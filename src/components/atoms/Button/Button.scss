@@ -6,6 +6,14 @@ button {
   box-shadow:
           8px 7px 21px $light-gray,
           -6px -7px 11px $white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: $sm;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $xxs;
 
   &.btn-rounded {
     border-radius: 25px;

@@ -35,8 +35,15 @@ const Hero = () => {
                                 className={'name text-2xl'}
                             />
                         </div>
-                        <Button content={'Contact Moi ! '} rounded={true} />
-                        <Button content={'Mes Projets ! '} rounded={true} background={"none"} border={'primary'} />
+                        <Button content={'Contact Moi ! '} rounded={true} className={'text-white'} />
+                        <Button
+                            content={'Mes Projets ! '}
+                            rounded={true}
+                            background={"none"}
+                            border={'primary'}
+                            icon={true}
+                            iconContent={'🔧'}
+                        />
 
                     </div>
                     <div className="box">

@@ -1,37 +1,45 @@
 import React from 'react';
-import './Button.css'
+import './Button.css';
 
-const Button = (
-    {
-        content = '',
-        className = 'btn',
-        rounded = false,
-        background  = 'primary',
-        border = 'none'
-    }
-) => {
+const Button = ({
+                    content = '',
+                    className = 'btn',
+                    rounded = false,
+                    background = 'primary',
+                    border = 'none',
+                    icon = false,
+                    iconContent = ''
+                }) => {
+    const roundedClass = rounded ? 'btn-rounded' : '';
+    let backgroundClass = '';
+    let borderClass = '';
 
-    const roundedProps = rounded ? 'btn-rounded' : '';
     switch (background) {
         case 'primary':
-            background = 'bg-primary'
+            backgroundClass = 'bg-primary';
             break;
         case 'none':
-            background = 'bg-none'
+            backgroundClass = 'bg-none';
             break;
+        default:
+            backgroundClass = background;
     }
+
     switch (border) {
         case 'none':
-            border = 'border-none'
+            borderClass = 'border-none';
             break;
         case 'primary':
-            border = 'border-primary'
+            borderClass = 'border-primary';
             break;
+        default:
+            borderClass = border;
     }
 
     return (
-        <button className={`${roundedProps} ${className} ${background} ${border}`}>
-            {content}
+        <button className={`${roundedClass} ${className} ${backgroundClass} ${borderClass}`}>
+             <span>{content}</span>
+             <span>{icon && iconContent}</span>
         </button>
     );
 };
