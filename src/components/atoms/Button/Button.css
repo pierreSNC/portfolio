@@ -16,8 +16,14 @@ button.btn-rounded {
 button.bg-primary {
   background: linear-gradient(90deg, rgb(2, 117, 216) 0%, rgb(3, 90, 163) 100%);
 }
+button.bg-primary:hover {
+  background: #025aa5;
+}
 button.bg-none {
   background: linear-gradient(180deg, rgb(232, 234, 241) 0%, rgb(235, 236, 240) 100%);
+}
+button.bg-none:hover {
+  background: #dddddd;
 }
 button.border-none {
   border: none;

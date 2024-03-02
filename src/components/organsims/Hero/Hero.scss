@@ -3,12 +3,14 @@
 .hero {
   height: 100vh;
   position: relative;
+  padding-top: 115px;
 
 
   .puddle {
     position: absolute;
     left: 0;
-    bottom: 115px;
+    bottom: 0;
+    z-index: -1;
   }
 
   .hero__content {
@@ -41,7 +43,6 @@
       position: relative;
       width: fit-content;
       font-family: "Kanit", serif;
-      font-size: 4rem;
       font-weight: bold;
       text-transform: uppercase;
       color: rgba(232,234,241,1);

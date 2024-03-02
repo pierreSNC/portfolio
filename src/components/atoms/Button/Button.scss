@@ -1,5 +1,11 @@
 @use "../../../utils/_variable.scss" as *;
 
+@mixin button-hover-color($color, $opacity: 10%) {
+  &:hover {
+    background: darken($color, $opacity);
+  }
+}
+
 button {
   height: 50px;
   width: 200px;
@@ -19,10 +25,11 @@ button {
     border-radius: 25px;
   }
 
-  &.bg-primary { background: $primary-gradient; }
-  &.bg-none { background: $faded; }
+  &.bg-primary { background: $primary-gradient;  @include button-hover-color($primary, 10%);}
+  &.bg-none { background: $faded-gradient; @include button-hover-color($faded, 5%)}
 
   &.border-none { border: none; }
   &.border-primary { border: solid 2px $white; }
+
 }
 

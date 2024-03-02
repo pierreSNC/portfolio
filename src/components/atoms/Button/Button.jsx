@@ -39,7 +39,7 @@ const Button = ({
     return (
         <button className={`${roundedClass} ${className} ${backgroundClass} ${borderClass}`}>
              <span>{content}</span>
-             <span>{icon && iconContent}</span>
+             <span>{icon && iconContent}    </span>
         </button>
     );
 };

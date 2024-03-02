@@ -7,7 +7,6 @@ import Header from "./components/molecules/Header/Header";
 function App() {
   return (
     <div className="App">
-
         <Hero />
     </div>
   );

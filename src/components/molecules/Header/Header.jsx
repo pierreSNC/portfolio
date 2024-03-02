@@ -7,17 +7,25 @@ import './Header.css'
 const Header = () => {
 
     const [activeIndex, setActiveIndex] = useState(0);
+    const [switchMenu, setSwitchMenu] = useState(false);
 
     const handleItemClick = (index) => {
         setActiveIndex(index);
-    };
+    }
+
+
 
     return (
         <header className={'container'}>
             <div>
                 <Image width={'50px'} height={"auto"}/>
             </div>
-            <nav>
+            <div id="menu-toggle" onClick={() => setSwitchMenu(!switchMenu)} className={`menu-toggle ${switchMenu ? 'nav-open' : ''}`}>
+                <span className="menu-toggle-bar menu-toggle-bar--top"></span>
+                <span className="menu-toggle-bar menu-toggle-bar--middle"></span>
+                <span className="menu-toggle-bar menu-toggle-bar--bottom"></span>
+            </div>
+            <nav className={`menu-transition ${switchMenu ? 'menu-visible' : 'menu-hidden'}`}>
                 <ul>
                     {listItems.map((item, index) => (
                         <li
