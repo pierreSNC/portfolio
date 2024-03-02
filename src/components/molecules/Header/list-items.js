@@ -1,17 +1,12 @@
 const listItems = [
     {
         tag: 'a',
-        title: 'Home',
+        title: 'Accueil',
         link : '#'
     },
     {
         tag: 'a',
-        title: 'About',
-        link: '#'
-    },
-    {
-        tag: 'a',
-        title: 'Skills',
+        title: 'Compétences',
         link: '#'
     },
     {
@@ -21,7 +16,7 @@ const listItems = [
     },
     {
         tag: 'a',
-        title: 'Works',
+        title: 'Travaux',
         link: '#'
     },
     {

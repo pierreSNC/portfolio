@@ -1,0 +1,258 @@
+@use "../../utils/variable" as *;
+
+#skills {
+  width: 90%;
+  margin: 100px auto 0 auto;
+  .skills__title {
+    display: flex;
+    align-items: flex-end;
+    font-family: "Simonetta", serif;
+    margin-bottom: 75px;
+    .line {
+      width: 100%;
+      height: 1px;
+      background: $primary;
+    }
+  }
+  .skills__wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 5rem;
+    row-gap: 3rem;
+
+    .skill__item {
+
+      p {
+        margin-bottom: 10px;
+        font-family: "Quicksand", sans-serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
+
+      &.html {
+        p {
+          color: #cc6699;
+        }
+
+        .progress__bar {
+          .progress__fill {
+            width: 90%;
+            background: #cc6699;
+
+            &::after {
+              background: #cc6699;
+            }
+
+            &::before {
+              content: "90%";
+              color: #cc6699;
+            }
+          }
+        }
+      }
+
+      &.symfony {
+        p {
+          color: #ec5453;
+        }
+        .progress__bar {
+          .progress__fill {
+            width: 75%;
+            background: #ec5453;
+
+            &::after {
+              background: #ec5453;
+            }
+
+            &::before {
+              content: "75%";
+              color: #ec5453;
+            }
+          }
+        }
+
+      }
+
+      &.node {
+        p {
+          color: #68a063;
+        }
+        .progress__bar {
+          .progress__fill {
+            width: 75%;
+            background: #68a063;
+
+            &::after {
+              background: #68a063;
+            }
+
+            &::before {
+              content: "75%";
+              color: #68a063;
+            }
+          }
+        }
+      }
+
+      &.php {
+        p {
+          color: #a84cb8;
+        }
+        .progress__bar {
+          .progress__fill {
+            width: 90%;
+            background: #a84cb8;
+
+            &::after {
+              background: #a84cb8;
+            }
+
+            &::before {
+              content: "90%";
+              color: #a84cb8;
+            }
+          }
+        }
+      }
+
+      &.javascript {
+        p {
+          color: #f9bf3f;
+        }
+        .progress__bar {
+          .progress__fill {
+            width: 90%;
+            background: #f9bf3f;
+
+            &::after {
+              background: #f9bf3f;
+            }
+
+            &::before {
+              content: "90%";
+              color: #f9bf3f;
+            }
+          }
+        }
+      }
+
+      &.prestashop {
+        p {
+          color: #2c98f0;
+        }
+        .progress__bar {
+          .progress__fill {
+            width: 90%;
+            background: #2c98f0;
+
+            &::after {
+              background: #2c98f0;
+            }
+
+            &::before {
+              content: "90%";
+              color: #2c98f0;
+            }
+          }
+        }
+      }
+
+      &.docker {
+        p {
+          color: #333333;
+        }
+        .progress__bar {
+          .progress__fill {
+            width: 75%;
+            background: #333333;
+
+            &::after {
+              background: #333333;
+            }
+
+            &::before {
+              content: "75%";
+              color: #333333;
+            }
+          }
+        }
+      }
+
+      &.reactjs {
+        p {
+          color: #4c768d;
+        }
+        .progress__bar {
+          .progress__fill {
+            width: 75%;
+            background: #4c768d;
+
+            &::after {
+              background: #4c768d;
+            }
+
+            &::before {
+              content: "75%";
+              color: #4c768d;
+            }
+          }
+        }
+      }
+
+      .progress__bar {
+
+        height: 6px;
+        width: 100%;
+
+        .progress__fill {
+          background: royalblue;
+          height: 100%;
+          position: relative;
+          border-radius: 8px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -5px;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: solid 1px $light-gray;
+          }
+
+          &::before {
+            position: absolute;
+            top: -30px;
+            right: 0;
+            font-weight: 600;
+            font-family: "Quicksand", sans-serif;
+          }
+        }
+
+        .progress__empty {
+          background: #eaeaea;
+          border: solid 1px $light-gray;
+          height: 100%;
+          width: 100%;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 860px){
+  #skills {
+
+    .skills__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+  }
+}

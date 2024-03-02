@@ -7,10 +7,10 @@ import Button from "../../atoms/Button/Button";
 
 const Hero = () => {
     return (
-        <div className={'hero'}>
+        <section className={'hero h-full lg:h-[100vh]'}>
             <Header />
 
-            <section className={'container hero__content flex flex-col space-y-5'}>
+            <article className={'container hero__content flex flex-col space-y-5'}>
                 <div className="wrapper flex flex-col flex-col-reverse gap-y-12 lg:flex-row justify-between items-center">
                     <div className="item flex flex-col space-y-4">
                         <Text
@@ -53,7 +53,7 @@ const Hero = () => {
 
                     </div>
                 </div>
-            </section>
+            </article>
             {/*<div className={'hero__quote'}>*/}
             {/*    <Image*/}
             {/*        url={`${process.env.PUBLIC_URL}/assets/img/quote.png`}*/}
@@ -74,7 +74,7 @@ const Hero = () => {
                     height={'auto'}
                     className={'puddle hidden lg:block'}
                 />
-        </div>
+        </section>
     );
 };
 
