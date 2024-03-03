@@ -15,13 +15,19 @@
     }
   }
   .skills__wrapper {
-    width: 90%;
+    width: 100%;
+    padding: 50px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     column-gap: 5rem;
     row-gap: 3rem;
+    background: $faded-gradient;
+    box-shadow:
+            inset 5px 5px 2px rgba(0, 0, 0, 12%),
+            inset -4px -4px 4px $white;
+
 
     .skill__item {
 
@@ -41,6 +47,7 @@
           .progress__fill {
             width: 90%;
             background: #cc6699;
+            border: solid 1px #cc6699;
 
             &::after {
               background: #cc6699;

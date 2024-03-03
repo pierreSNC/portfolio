@@ -32,11 +32,11 @@ const Hero = () => {
                             <Text
                                 tag={'span'}
                                 content={'Développeur Web'}
-                                className={'name text-[3rem] xl:text-[4rem]'}
+                                className={'name  text-[2.5rem] sm:text-[3rem] xl:text-[4rem]'}
                             />
                         </div>
                         <div>
-                            <div className={'flex gap-x-12 mt-16'}>
+                            <div className={'flex flex-col sm:flex-row items-center md:items-start gap-y-8 gap-x-12 mt-16'}>
                                 <Button content={'Contact Moi ! '} rounded={true} className={'text-white'} />
                                 <Button
                                     content={'Mes Projets ! '}
