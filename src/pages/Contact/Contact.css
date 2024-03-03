@@ -65,14 +65,12 @@
   width: 100%;
   font-family: "Quicksand", sans-serif;
   background: none;
-  border: none;
-  border-bottom: solid 1px #333;
-  padding: 0.5rem;
+  padding: 0.7rem;
   color: #151519;
+  box-shadow: inset 5px 6px 3px rgba(0, 0, 0, 0.12), inset -1px -1px 1px #ffffff;
 }
 #contact .contact__wrapper .contact__form form input:focus {
   outline: none;
-  border-bottom: solid 2px royalblue;
 }
 #contact .contact__wrapper .contact__form form .form__name {
   display: flex;
@@ -86,6 +84,7 @@
 }
 #contact .contact__wrapper .contact__form form .form__message {
   width: 100%;
+  box-shadow: inset 5px 6px 3px rgba(0, 0, 0, 0.12), inset -1px -1px 1px #ffffff;
 }
 #contact .contact__wrapper .contact__form form .form__message textarea {
   width: 100%;
@@ -93,18 +92,16 @@
   font-family: "Quicksand", sans-serif;
   background: none;
   border: none;
-  border: solid 1px #333;
-  padding: 0.5rem;
+  padding: 1rem;
   color: #151519;
   resize: none;
 }
 #contact .contact__wrapper .contact__form form .form__message textarea:focus {
   outline: none;
-  border: solid 2px royalblue;
 }
 #contact .contact__wrapper .contact__form form button[type=submit] {
-  border: solid 1px royalblue;
-  color: royalblue;
+  border: solid 1px #0275d8;
+  color: #0275d8;
   font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
@@ -115,7 +112,7 @@
 }
 #contact .contact__wrapper .contact__form form button[type=submit]:hover {
   color: #ffffff;
-  background: royalblue;
+  background: #0275d8;
 }
 
 @media (max-width: 992px) {

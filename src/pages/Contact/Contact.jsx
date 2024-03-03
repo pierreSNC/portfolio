@@ -1,6 +1,8 @@
 import React from 'react';
 import './Contact.css';
+
 import Text from "../../components/atoms/Text/Text";
+import Button from "../../components/atoms/Button/Button";
 
 const Contact = () => {
     return (
@@ -21,18 +23,18 @@ const Contact = () => {
 
                     <div className="contact__pictogram">
                         <div>
-                            <i className="fa-solid fa-phone-volume"></i>
+                            <Text tag={'span'} content={'📱'} className={'text-[1.5rem]'} />
                             <a href="tel:+33781632039">07 81 63 20 39</a>
                         </div>
                         <div>
-                            <i className="fa-solid fa-envelope"></i>
+                            <Text tag={'span'} content={'📩'} className={'text-[1.5rem]'} />
                             <a href="mailto:pierresenechal7@gmail.com">
                                 pierresenechal7@gmail.com
                             </a>
                         </div>
                         <div>
-                            <i className="fa-solid fa-location-dot"></i>
-                            <p>Paris / Troyes</p>
+                            <Text tag={'span'} content={'📍'} className={'text-[1.5rem]'} />
+                            <p>Lille</p>
                         </div>
                     </div>
                 </div>
@@ -56,11 +58,16 @@ const Contact = () => {
                             <label htmlFor="message" hidden></label>
                             <textarea name="message" id="message" placeholder="Votre message *"></textarea>
                         </div>
-                        <button type="submit">Envoyer</button>
+                        <Button
+                            content={'ENVOYER'}
+                            rounded={true}
+                            icon={true}
+                            iconContent={'📩'}
+                            className={'text-white'}
+                        />
                     </form>
                 </div>
             </div>
-
         </section>
     )
 };

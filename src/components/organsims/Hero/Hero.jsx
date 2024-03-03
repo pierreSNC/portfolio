@@ -37,7 +37,13 @@ const Hero = () => {
                         </div>
                         <div>
                             <div className={'flex flex-col sm:flex-row items-center md:items-start gap-y-8 gap-x-12 mt-16'}>
-                                <Button content={'Contact Moi ! '} rounded={true} className={'text-white'} />
+                                <Button
+                                    content={'Mon CV '}
+                                    rounded={true}
+                                    className={'text-white'}
+                                    icon={true}
+                                    iconContent={'📄'}
+                                />
                                 <Button
                                     content={'Mes Projets ! '}
                                     rounded={true}
