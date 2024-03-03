@@ -1,0 +1,30 @@
+#footer {
+  padding: 50px 50px 25px 50px;
+  box-shadow: 8px 7px 21px #898989, -6px -7px 11px #ffffff;
+  border-radius: 50px;
+  width: 90%;
+  margin: 100px auto 50px auto;
+}
+#footer footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+#footer footer article .item-list {
+  box-shadow: inset 5px 6px 3px rgba(0, 0, 0, 0.12), inset -1px -1px 1px #ffffff;
+}
+
+@media (max-width: 1024px) {
+  #footer footer {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  #footer footer {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*# sourceMappingURL=Footer.css.map */

@@ -6,6 +6,7 @@ import Header from "./components/molecules/Header/Header";
 import Skills from "./pages/Skills/Skills";
 import Experiences from "./pages/Experiences/Experiences";
 import Contact from "./pages/Contact/Contact";
+import Footer from "./components/molecules/Footer/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Skills />
         <Experiences />
         <Contact />
+        <Footer />
     </div>
   );
 }
