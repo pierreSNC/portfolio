@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './Experiences.css'
 import Text from "../../components/atoms/Text/Text";
+import { Element } from 'react-scroll';
 
 const Experiences = () => {
     const [months, setMonths] = useState(0);
@@ -16,7 +17,9 @@ const Experiences = () => {
     return (
         <section id="experience">
             <div className="experiences__title">
-                <Text tag={'h2'} content={'Experiences'} className={'text-[4rem]'} />
+                <Element name="experiences">
+                    <Text tag={'h2'} content={'Experiences'} className={'text-[2.5rem] sm:text-[3rem] xl:text-[4rem]'} />
+                </Element>
                 <div className={'line'}></div>
             </div>
             <div className="experience__wrapper">

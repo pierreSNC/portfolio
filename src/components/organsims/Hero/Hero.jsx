@@ -4,8 +4,12 @@ import Image from "../../atoms/Image/Image";
 import './Hero.css'
 import Text from "../../atoms/Text/Text";
 import Button from "../../atoms/Button/Button";
+import { Link, Element } from 'react-scroll';
 
 const Hero = () => {
+    const backgroundImageStyle = {
+        background: `url(${process.env.PUBLIC_URL}/assets/img/profile__picture.jpg) center center / cover no-repeat`,
+    };
     return (
         <section className={'hero h-full lg:h-[100vh]'}>
             <Header />
@@ -18,11 +22,13 @@ const Hero = () => {
                             content={'Bonjour ! 👋'}
                             className={'text-[2rem] lg:text-[3rem] text-black'}
                         />
-                        <Text
-                            tag={'h1'}
-                            content={'Je suis Pierre Sénéchal'}
-                            className={'text-[3rem] lg:text-[3rem] bold'}
-                        />
+                        <Element name="home">
+                            <Text
+                                tag={'h1'}
+                                content={'Je suis Pierre Sénéchal'}
+                                className={'text-[3rem] lg:text-[3rem] bold'}
+                            />
+                        </Element>
                         <div className={'flex-col xl:flex-row flex gap-5 xl:items-center items-start'}>
                             <Text
                                 tag={'p'}
@@ -44,18 +50,21 @@ const Hero = () => {
                                     icon={true}
                                     iconContent={'📄'}
                                 />
-                                <Button
-                                    content={'Mes Projets ! '}
-                                    rounded={true}
-                                    background={"none"}
-                                    border={'primary'}
-                                    icon={true}
-                                    iconContent={'🔧'}
-                                />
+                                <Link to={'works'} spy={true} smooth={true} offset={-150} duration={500} className={'cursor-pointer'}>
+                                    <Button
+                                        content={'Mes Projets ! '}
+                                        rounded={true}
+                                        background={"none"}
+                                        border={'primary'}
+                                        icon={true}
+                                        iconContent={'🔧'}
+                                    />
+                                </Link>
+
                             </div>
                         </div>
                     </div>
-                    <div className="box">
+                    <div className="box h-[300px] w-[300px] sm:w-[400px] sm:h-[400px]" style={backgroundImageStyle}>
 
                     </div>
                 </div>

@@ -3,12 +3,15 @@ import './Contact.css';
 
 import Text from "../../components/atoms/Text/Text";
 import Button from "../../components/atoms/Button/Button";
+import { Element } from 'react-scroll';
 
 const Contact = () => {
     return (
         <section id="contact">
-            <div className="experiences__title">
-                <Text tag={'h2'} content={'Contact'} className={'text-[4rem]'} />
+            <div className="contact__title">
+                <Element name="contact">
+                    <Text tag={'h2'} content={'Contact'} className={'text-[2.5rem] sm:text-[3rem] xl:text-[4rem]'} />
+                </Element>
                 <div className={'line'}></div>
             </div>
             <div className="contact__wrapper">

@@ -21,10 +21,6 @@
     }
 
     .box {
-      background: url("https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg")
-        center center / cover no-repeat;
-      height: 400px;
-      width: 400px;
       box-shadow: 0 20px 5px 5px rgba(0, 0, 0, .2);
       animation: blob 5s ease-in-out infinite;
       transition: all 1s ease-in-out;

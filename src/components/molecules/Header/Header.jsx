@@ -3,6 +3,7 @@ import listItems from './list-items'
 import Text from "../../atoms/Text/Text";
 import Image from "../../atoms/Image/Image";
 import './Header.css'
+import { Link } from 'react-scroll';
 
 const Header = () => {
 
@@ -18,7 +19,12 @@ const Header = () => {
     return (
         <header className={'container'}>
             <div>
-                <Image width={'50px'} height={"auto"}/>
+                <Image
+                    url={`${process.env.PUBLIC_URL}/assets/img/logo.png`}
+                    alt={'logo'}
+                    width={'80px'}
+                    height={'auto'}
+                />
             </div>
             <div id="menu-toggle" onClick={() => setSwitchMenu(!switchMenu)} className={`menu-toggle ${switchMenu ? 'nav-open' : ''}`}>
                 <span className="menu-toggle-bar menu-toggle-bar--top"></span>
@@ -28,18 +34,20 @@ const Header = () => {
             <nav className={`menu-transition ${switchMenu ? 'menu-visible' : 'menu-hidden'}`}>
                 <ul>
                     {listItems.map((item, index) => (
-                        <li
-                            key={index}
-                            className={index === activeIndex ? 'active' : ''}
-                            onClick={() => handleItemClick(index)}
-                        >
-                            <Text
-                                tag={item.tag}
-                                content={item.title}
-                                href={item.link}
-                                className={'text-black bold'}
-                            />
-                        </li>
+                        <Link key={index} to={item.to} spy={true} smooth={true} offset={item.offset} duration={500} className={'cursor-pointer'}>
+                            <li
+                                className={index === activeIndex ? 'active' : ''}
+                                onClick={() => handleItemClick(index)}
+                            >
+                                <Text
+                                    tag={item.tag}
+                                    content={item.title}
+                                    href={item.link}
+                                    className={'text-black bold'}
+                                />
+                            </li>
+                        </Link>
+
                     ))}
                 </ul>
             </nav>

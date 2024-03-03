@@ -38,6 +38,11 @@
   box-shadow: inset 5px 5px 2px rgba(0, 0, 0, 0.12), inset -4px -4px 4px #ffffff;
   position: relative;
 }
+@media (max-width: 640px) {
+  #experience .experience__wrapper .experience__item {
+    width: 90%;
+  }
+}
 #experience .experience__wrapper .experience__item::before {
   content: "";
   position: absolute;

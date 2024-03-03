@@ -2,13 +2,13 @@
   width: 90%;
   margin: 0 auto;
 }
-#contact .experiences__title {
+#contact .contact__title {
   display: flex;
   align-items: flex-end;
   font-family: "Simonetta", serif;
   margin-bottom: 75px;
 }
-#contact .experiences__title .line {
+#contact .contact__title .line {
   width: 100%;
   height: 1px;
   background: #0275d8;

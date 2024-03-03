@@ -47,6 +47,10 @@
 
       position: relative;
 
+      @media (max-width: 640px) {
+        width: 90%;
+      }
+
       &::before {
         content: "";
         position: absolute;

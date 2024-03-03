@@ -128,3 +128,11 @@ header {
     }
   }
 }
+
+@media (max-width: 1024px) {
+  header {
+    nav {
+      right: 20px;
+    }
+  }
+}

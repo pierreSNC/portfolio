@@ -1,28 +1,38 @@
 const listItems = [
     {
-        tag: 'a',
+        tag: 'span',
         title: 'Accueil',
-        link : '#'
+        link : '',
+        to: 'home',
+        offset: -1000
     },
     {
-        tag: 'a',
+        tag: 'span',
         title: 'Compétences',
-        link: '#'
+        link: '',
+        to: 'skills',
+        offset: -150
     },
     {
-        tag: 'a',
-        title: 'Experience',
-        link: '#'
+        tag: 'span',
+        title: 'Experiences',
+        link: '',
+        to: 'experiences',
+        offset: -150
     },
     {
-        tag: 'a',
+        tag: 'span',
         title: 'Travaux',
-        link: '#'
+        link: '',
+        to: 'works',
+        offset: -150
     },
     {
-        tag: 'a',
+        tag: 'span',
         title: 'Contact',
-        link: '#'
+        link: '',
+        to: 'contact',
+        offset: -150
     },
 ];
 

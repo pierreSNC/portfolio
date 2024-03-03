@@ -2,12 +2,15 @@ import React from 'react';
 import './Skills.css';
 
 import Text from "../../components/atoms/Text/Text";
+import { Element } from 'react-scroll';
 
 const Skills = () => {
     return (
         <section id={'skills'}>
             <div className="skills__title">
-                <Text tag={'h2'} content={'Compétences'} className={'text-[4rem]'} />
+                <Element name="skills">
+                    <Text tag={'h2'} content={'Compétences'} className={'text-[2.5rem] sm:text-[3rem] xl:text-[4rem]'} />
+                </Element>
                 <div className={'line'}></div>
             </div>
 
