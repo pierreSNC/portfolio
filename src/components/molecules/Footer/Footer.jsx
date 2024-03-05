@@ -16,7 +16,7 @@ const Footer = () => {
                         width={'80px'}
                         height={'auto'}
                     />
-                    <Text tag={'p'} content={'Développeur Web en recherche d\'une alterance dans le développement Javascript.'} className={'w-[75%]'} />
+                    <Text tag={'p'} content={'Développeur Web en recherche d\'une alternance dans le développement Javascript.'} className={'w-[75%]'} />
                 </article>
                 <article>
                     <Text tag={'h3'} content={'Liens importants'} className={'text-xl mb-4'}  />
