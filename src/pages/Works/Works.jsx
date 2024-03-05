@@ -18,6 +18,13 @@ import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 
 const Works = () => {
     const swiperRef = useRef(null);
+    const backgroundImageStyle = {
+        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/img/works/thumbnail-saphiir.jpg)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        filter: 'blur(8px)',
+    };
+
     return (
         <section id='works'>
             <div className="works__title">
@@ -49,46 +56,78 @@ const Works = () => {
                 >
                     <SwiperSlide>
                         <div className={'slide-child'}>
-                            <Image className={'w-full h-full object-cover p-2'}/>
+                            <Image
+                                className={'w-full h-full absolute top-0 left-0 object-cover p-2 filter blur-sm'}
+                                url={`${process.env.PUBLIC_URL}/assets/img/works/thumbnail-saphiir.jpg`}
+                            />
+                            <Image
+                                className={'w-full h-full absolute top-0 left-0 object-contain p-2'}
+                                url={`${process.env.PUBLIC_URL}/assets/img/works/thumbnail-saphiir.jpg`}
+                            />
 
-                            <a href="#">
-                                <Image url={'https://logos-marques.com/wp-content/uploads/2021/03/GitHub-Logo.png'} className={'logo__github'}/>
+                            <a href="https://github.com/pierreSNC/saphiir-front">
+                                <Image url={`${process.env.PUBLIC_URL}/assets/img/GitHub-Logo.png`} className={'logo__github'}/>
                             </a>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={'slide-child'}>
-                            <Image className={'w-full h-full object-cover p-2'}/>
-
-                            <a href="#">
-                                <Image url={'https://logos-marques.com/wp-content/uploads/2021/03/GitHub-Logo.png'} className={'logo__github'}/>
+                            <Image
+                                className={'w-full h-full absolute top-0 left-0 object-cover p-2 filter blur-sm'}
+                                url={`${process.env.PUBLIC_URL}/assets/img/works/thumbnail-discord.jpg`}
+                            />
+                            <Image
+                                className={'w-full h-full absolute top-0 left-0 object-contain p-2'}
+                                url={`${process.env.PUBLIC_URL}/assets/img/works/thumbnail-discord.jpg`}
+                            />
+                            <a href="https://github.com/pierreSNC/discord-symfony">
+                                <Image url={`${process.env.PUBLIC_URL}/assets/img/GitHub-Logo.png`} className={'logo__github'}/>
                             </a>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={'slide-child'}>
-                            <Image className={'w-full h-full object-cover p-2'}/>
-
-                            <a href="#">
-                                <Image url={'https://logos-marques.com/wp-content/uploads/2021/03/GitHub-Logo.png'} className={'logo__github'}/>
+                            <Image
+                                className={'w-full h-full absolute top-0 left-0 object-cover p-2 filter blur-sm'}
+                                url={`${process.env.PUBLIC_URL}/assets/img/works/thumbnail-TVMaze.jpg`}
+                            />
+                            <Image
+                                className={'w-full h-full absolute top-0 left-0 object-contain p-2'}
+                                url={`${process.env.PUBLIC_URL}/assets/img/works/thumbnail-TVMaze.jpg`}
+                            />
+                            <a href="https://github.com/pierreSNC/TVMaze">
+                                <Image url={`${process.env.PUBLIC_URL}/assets/img/GitHub-Logo.png`} className={'logo__github'}/>
                             </a>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={'slide-child'}>
-                            <Image className={'w-full h-full object-cover p-2'}/>
+                            <Image
+                                className={'w-full h-full absolute top-0 left-0 object-cover p-2 filter blur-sm'}
+                                url={`${process.env.PUBLIC_URL}/assets/img/works/thumbnail-pokedex.jpg`}
+                            />
+                            <Image
+                                className={'w-full h-full absolute top-0 left-0 object-contain p-2'}
+                                url={`${process.env.PUBLIC_URL}/assets/img/works/thumbnail-pokedex.jpg`}
+                            />
 
-                            <a href="#">
-                                <Image url={'https://logos-marques.com/wp-content/uploads/2021/03/GitHub-Logo.png'} className={'logo__github'}/>
+                            <a href="https://github.com/pierreSNC/Pokedex">
+                                <Image url={`${process.env.PUBLIC_URL}/assets/img/GitHub-Logo.png`} className={'logo__github'}/>
                             </a>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className={'slide-child'}>
-                            <Image className={'w-full h-full object-cover p-2'}/>
-
-                            <a href="#">
-                                <Image url={'https://logos-marques.com/wp-content/uploads/2021/03/GitHub-Logo.png'} className={'logo__github'}/>
+                            <Image
+                                className={'w-full h-full absolute top-0 left-0 object-cover p-2 filter blur-sm'}
+                                url={`${process.env.PUBLIC_URL}/assets/img/works/thumbnail-tesla.jpg`}
+                            />
+                            <Image
+                                className={'w-full h-full absolute top-0 left-0 object-contain p-2'}
+                                url={`${process.env.PUBLIC_URL}/assets/img/works/thumbnail-tesla.jpg`}
+                            />
+                            <a href="https://github.com/pierreSNC/Tesla">
+                                <Image url={`${process.env.PUBLIC_URL}/assets/img/GitHub-Logo.png`} className={'logo__github'}/>
                             </a>
                         </div>
                     </SwiperSlide>

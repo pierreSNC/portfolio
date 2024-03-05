@@ -6,7 +6,8 @@ const Image = (
         alt = '',
         className = '',
         width = '50px',
-        height = '50px'
+        height = '50px',
+        style
     }
 ) => {
     return (
@@ -16,6 +17,7 @@ const Image = (
             width={width}
             height={height}
             className={className}
+            style={style}
         />
     );
 };
