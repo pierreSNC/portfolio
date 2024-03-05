@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding-top: 115px;
+  padding: 115px 50px 0 50px;
 }
 .hero .puddle {
   position: absolute;

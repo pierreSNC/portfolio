@@ -1,0 +1,78 @@
+#works {
+  width: 90%;
+  margin: 100px auto;
+}
+#works .works__title {
+  display: flex;
+  align-items: flex-end;
+  font-family: "Simonetta", serif;
+  margin-bottom: 75px;
+}
+#works .works__title .line {
+  width: 100%;
+  height: 1px;
+  background: #0275d8;
+}
+#works #works-swiper {
+  position: relative;
+}
+#works #works-swiper .swiper-next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-120%);
+  right: -5px;
+}
+#works #works-swiper .swiper-prev-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-120%);
+  left: 0;
+}
+#works #works-swiper .swiper-slide {
+  height: 475px;
+}
+#works #works-swiper .swiper-slide .slide-child {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  height: 400px;
+  position: relative;
+  background: linear-gradient(180deg, rgb(232, 234, 241) 0%, rgb(235, 236, 240) 100%);
+  box-shadow: inset 5px 5px 2px rgba(0, 0, 0, 0.12), inset -4px -4px 4px #ffffff;
+}
+#works #works-swiper .swiper-slide .slide-child .logo__github {
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  width: 60px;
+  z-index: 1000;
+  transition: 0.3s ease-in-out;
+}
+#works #works-swiper .swiper-slide .slide-child .logo__github:hover {
+  transform: scale(1.1);
+}
+#works #works-swiper .swiper-pagination span {
+  background: #0275d8;
+  border-radius: 0;
+  height: 6px;
+  width: 25px;
+}
+#works #works-swiper .swiper-next-button, #works #works-swiper .swiper-prev-button {
+  background: linear-gradient(180deg, rgb(232, 234, 241) 0%, rgb(235, 236, 240) 100%);
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  box-shadow: inset 5px 5px 2px rgba(0, 0, 0, 0.12), inset -4px -4px 4px #ffffff;
+}
+#works #works-swiper .swiper-next-button:hover svg, #works #works-swiper .swiper-prev-button:hover svg {
+  transform: scale(1.1);
+}
+#works #works-swiper .swiper-next-button svg, #works #works-swiper .swiper-prev-button svg {
+  width: 20px;
+  transition: 0.3s ease-in-out;
+}
+#works #works-swiper .swiper-next-button svg:hover, #works #works-swiper .swiper-prev-button svg:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=Works.css.map */

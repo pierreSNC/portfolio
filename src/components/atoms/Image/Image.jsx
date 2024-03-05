@@ -2,7 +2,7 @@ import React from 'react';
 
 const Image = (
     {
-        url = 'https://via.placeholder.com/100x100',
+        url = 'https://via.placeholder.com/1000x1000',
         alt = '',
         className = '',
         width = '50px',

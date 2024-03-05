@@ -31,11 +31,6 @@ const Hero = () => {
                         </Element>
                         <div className={'flex-col xl:flex-row flex gap-5 xl:items-center items-start'}>
                             <Text
-                                tag={'p'}
-                                content={'et je suis'}
-                                className={'text-[2rem] lg:text-[2.5rem] text-black bold'}
-                            />
-                            <Text
                                 tag={'span'}
                                 content={'Développeur Web'}
                                 className={'name  text-[2.5rem] sm:text-[3rem] xl:text-[4rem]'}
