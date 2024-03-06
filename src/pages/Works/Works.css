@@ -13,6 +13,40 @@
   height: 1px;
   background: #0275d8;
 }
+#works .pokedex-pop-up {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#works .pokedex-pop-up .pop-up {
+  width: 90%;
+  height: 90%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#works .pokedex-pop-up .pop-up .mark {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+#works .pokedex-pop-up .pop-up .mark i {
+  font-size: 35px;
+}
+#works .pokedex-pop-up .pop-up iframe {
+  width: 75%;
+  height: 75%;
+}
 #works #works-swiper {
   position: relative;
 }

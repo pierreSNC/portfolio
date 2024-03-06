@@ -16,6 +16,47 @@
     }
   }
 
+  .pokedex-pop-up {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0, .8);
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .pop-up {
+      width: 90%;
+      height: 90%;
+      background: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+      position: relative;
+
+      .mark {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        i {
+          font-size: 35px;
+        }
+      }
+
+      iframe {
+        width: 75%;
+        height: 75%;
+      }
+    }
+  }
+
   #works-swiper {
     position: relative;
     .swiper-next-button {
