@@ -69,7 +69,7 @@ const Works = () => {
                     }}
                 >
                     <SwiperSlide>
-                        <a href="">
+                        <a href="http://45.155.169.51/Saphiir" target={'_blank'}>
                             <div className={'slide-child'}>
                                 <Image
                                     className={'w-full h-full absolute top-0 left-0 object-cover p-2 filter blur-sm'}
@@ -87,8 +87,7 @@ const Works = () => {
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a href="">
-                            <a href="">
+                            <a href="http://45.155.169.51/Discord" target={'_blank'}>
                                 <div className={'slide-child'}>
                                     <Image
                                         className={'w-full h-full absolute top-0 left-0 object-cover p-2 filter blur-sm'}
@@ -103,10 +102,9 @@ const Works = () => {
                                     </a>
                                 </div>
                             </a>
-                        </a>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a href="">
+                        <a href="http://45.155.169.51/TVMaze" target={'_blank'}>
                             <div className={'slide-child'}>
                                 <Image
                                     className={'w-full h-full absolute top-0 left-0 object-cover p-2 filter blur-sm'}
@@ -141,7 +139,7 @@ const Works = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <a href="">
+                        <a href="http://45.155.169.51/Tesla" target={'_blank'}>
                             <div className={'slide-child'}>
                                 <Image
                                     className={'w-full h-full absolute top-0 left-0 object-cover p-2 filter blur-sm'}

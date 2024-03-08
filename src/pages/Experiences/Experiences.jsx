@@ -37,7 +37,7 @@ const Experiences = () => {
                     </div>
                     <div className="experience__item__bottom">
                         <p className="description">
-                            Développement de module PrestaShop spécique à la demande du client. Maintenance des sites en ligne.
+                            Développement de module PrestaShop spécique à la demande des clients. Maintenance des sites en ligne.
                         </p>
                     </div>
                 </div>
