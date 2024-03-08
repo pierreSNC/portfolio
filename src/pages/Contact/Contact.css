@@ -99,6 +99,22 @@
 #contact .contact__wrapper .contact__form form .form__message textarea:focus {
   outline: none;
 }
+#contact .contact__wrapper .contact__form form .alert-error {
+  background: #f33c3c;
+  border: solid 2px #ba0404;
+  padding: 10px;
+  border-radius: 12px;
+  color: #ffffff;
+  text-align: center;
+}
+#contact .contact__wrapper .contact__form form .alert-success {
+  background: #23dc23;
+  border: solid 2px #00a300;
+  padding: 10px;
+  border-radius: 12px;
+  color: #ffffff;
+  text-align: center;
+}
 #contact .contact__wrapper .contact__form form button[type=submit] {
   border: solid 1px #0275d8;
   color: #0275d8;

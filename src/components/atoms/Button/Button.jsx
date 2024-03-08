@@ -9,7 +9,8 @@ const Button = ({
                     border = 'none',
                     icon = false,
                     iconContent = '',
-                    onClick
+                    onClick,
+                    type
                 }) => {
     const roundedClass = rounded ? 'btn-rounded' : '';
     let backgroundClass = '';
@@ -38,7 +39,7 @@ const Button = ({
     }
 
     return (
-        <button className={`${roundedClass} ${className} ${backgroundClass} ${borderClass}`} onClick={onClick}>
+        <button className={`${roundedClass} ${className} ${backgroundClass} ${borderClass}`} onClick={onClick} type={type}>
              <span>{content}</span>
              <span>{icon && iconContent}</span>
         </button>
