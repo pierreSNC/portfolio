@@ -28,6 +28,12 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        if (!formData.lastname || !formData.firstname || !formData.email || !formData.message) {
+            setAlertMessage('Veuillez remplir tous les champs requis.');
+            setAlertType('alert-warning');
+            return;
+        }
         try {
             const response = await axios.post('http://45.155.169.51:3001/send-message', formData);
             setAlertMessage('Votre message a été envoyé avec succès.');
@@ -85,7 +91,7 @@ const Contact = () => {
                         <div className="form__name">
                             <div>
                                 <label htmlFor="lastname" hidden>Nom</label>
-                                <input type="text" id="lastname" name="lastname" placeholder="Nom *" value={formData.lastname} onChange={handleChange} />
+                                <input required={true} type="text" id="lastname" name="lastname" placeholder="Nom *" value={formData.lastname} onChange={handleChange} />
                             </div>
                             <div>
                                 <label htmlFor="firstname" hidden>Prénom</label>

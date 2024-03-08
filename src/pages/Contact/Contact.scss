@@ -143,6 +143,15 @@
           text-align: center;
         }
 
+        .alert-warning {
+          background: #fab435;
+          border: solid 2px #f3bf01;
+          padding: 10px;
+          border-radius: 12px;
+          color: $white;
+          text-align: center;
+        }
+
 
         button[type="submit"] {
           border: solid 1px $primary;

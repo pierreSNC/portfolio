@@ -115,6 +115,14 @@
   color: #ffffff;
   text-align: center;
 }
+#contact .contact__wrapper .contact__form form .alert-warning {
+  background: #fab435;
+  border: solid 2px #f3bf01;
+  padding: 10px;
+  border-radius: 12px;
+  color: #ffffff;
+  text-align: center;
+}
 #contact .contact__wrapper .contact__form form button[type=submit] {
   border: solid 1px #0275d8;
   color: #0275d8;
