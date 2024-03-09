@@ -38,13 +38,16 @@ const Hero = () => {
                         </div>
                         <div>
                             <div className={'flex flex-col sm:flex-row items-center md:items-start gap-y-8 gap-x-12 mt-16'}>
-                                <Button
-                                    content={'Mon CV '}
-                                    rounded={true}
-                                    className={'text-white'}
-                                    icon={true}
-                                    iconContent={'📄'}
-                                />
+                                <a href={`${process.env.PUBLIC_URL}/assets/Pierre_SENECHAL_CV.pdf`} target="_blank" rel="noopener noreferrer">
+                                    <Button
+                                        content={'Mon CV '}
+                                        rounded={true}
+                                        className={'text-white'}
+                                        icon={true}
+                                        iconContent={'📄'}
+                                    />
+                                </a>
+
                                 <Link to={'works'} spy={true} smooth={true} offset={-150} duration={500} className={'cursor-pointer'}>
                                     <Button
                                         content={'Mes Projets ! '}

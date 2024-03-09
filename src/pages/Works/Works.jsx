@@ -32,12 +32,9 @@ const Works = () => {
                         <div className="mark" onClick={() => togglePopUp()}>
                             <i className="fa-solid fa-xmark"></i>
                         </div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EHed72F0ZCk?si=p4VNyARXABe9u8L4"
-                                title="YouTube video player" frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen>
-
-                        </iframe>
+                        <video controls style={{ width: '900px', height: '500px' }}>
+                            <source src={`${process.env.PUBLIC_URL}/assets/video/video_pokedex.mp4`} type="video/mp4" />
+                        </video>
                     </div>
                 </div>
             ) : ''}
